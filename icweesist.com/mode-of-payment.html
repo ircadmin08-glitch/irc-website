@@ -96,9 +96,46 @@
 <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
 
 
-<!--HEADER-->
-<header>
-    <div id="lgx-header" class="lgx-header">
+        <!--HEADER-->
+        <style>
+            .lgx-header-top {
+                background: #fff;
+                padding: 20px 0;
+                border-bottom: 2px solid #e11c21;
+                text-align: center;
+                transition: all 0.3s ease;
+            }
+            .lgx-header-top h1 {
+                font-family: 'Oswald', sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: clamp(18px, 5vw, 36px);
+                color: #222;
+                margin: 0;
+                line-height: 1.2;
+                letter-spacing: 0.5px;
+            }
+            .lgx-logo img {
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            .menu-onscroll .lgx-logo img {
+                max-height: 50px !important;
+            }
+            @media (max-width: 767px) {
+                .lgx-header-top {
+                    padding: 10px 5px;
+                }
+            }
+        </style>
+        <header>
+            <div id="lgx-header-top" class="lgx-header-top">
+                <div class="container">
+                    <h1>5th International conference on waste, energy and environment (ICWEE-2026)</h1>
+                </div>
+            </div>
+            <div id="lgx-header" class="lgx-header">
         <div class="lgx-header-position"> <!--lgx-header-position-fixed lgx-header-position-white lgx-header-fixed-container lgx-header-fixed-container-gap lgx-header-position-white-->
             <div class="lgx-container-fluid"> <!--lgx-container-fluid-->
                 <nav class="navbar navbar-default lgx-navbar">
