@@ -97,9 +97,75 @@
 <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
 
 
-<!--HEADER-->
-<header>
-    <div id="lgx-header" class="lgx-header">
+                                        <!--HEADER-->
+        <style>
+            .lgx-header-top {
+                background: #fff;
+                padding: 10px 0;
+                transition: all 0.3s ease;
+                border-bottom: 1px solid #eee;
+            }
+            .lgx-header-top .container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 20px;
+                max-width: 1200px;
+                width: 100%;
+            }
+            .lgx-logo-top img {
+                max-height: 80px;
+                width: auto;
+            }
+            .lgx-header-top h1 {
+                font-family: 'Oswald', sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: clamp(20px, 2.5vw, 30px);
+                color: #222;
+                margin: 0;
+                line-height: 1.2;
+                letter-spacing: 0.1px;
+                text-align: left;
+                white-space: nowrap;
+            }
+            @media (max-width: 991px) {
+                .lgx-header-top .container {
+                    gap: 15px;
+                }
+                .lgx-logo-top img {
+                    max-height: 60px;
+                }
+                .lgx-header-top h1 {
+                    font-size: clamp(18px, 2.2vw, 24px);
+                }
+            }
+            @media (max-width: 767px) {
+                .lgx-header-top .container {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    padding: 0 10px;
+                    gap: 10px;
+                }
+                .lgx-header-top h1 {
+                    font-size: clamp(14px, 4vw, 18px);
+                    white-space: normal;
+                }
+                .lgx-logo-top img {
+                    max-height: 50px;
+                }
+            }
+        </style>
+        <header>
+            <div id="lgx-header-top" class="lgx-header-top">
+                <div class="container">
+                    <div class="lgx-logo-top">
+                        <img src="assets/img/icweesist-logo.jpeg" alt="Logo">
+                    </div>
+                    <h1>5th International conference on waste, energy and environment (ICWEE-2026)</h1>
+                </div>
+            </div>
+            <div id="lgx-header" class="lgx-header">
         <div class="lgx-header-position"> <!--lgx-header-position-fixed lgx-header-position-white lgx-header-fixed-container lgx-header-fixed-container-gap lgx-header-position-white-->
             <div class="lgx-container-fluid"> <!--lgx-container-fluid-->
                 <nav class="navbar navbar-default lgx-navbar">
@@ -110,13 +176,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <div class="lgx-logo">
-                            <a href="index.html" class="lgx-scroll">
-                                <img src="assets/img/ICWEE-2024-logo.png" alt="ICWEE-2024"/>
-                                <!--<img src="assets/img/India.gif" width="100" alt="ICWEE-2024" style="padding-top:10px"/>
-                                <img src="assets/img/australia-flag.gif" width="100"  alt="ICWEE-2024" style="padding-top:10px"/>-->
-                            </a>
-                        </div>
+                        
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <!--<div class="lgx-nav-right navbar-right">

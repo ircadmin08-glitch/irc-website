@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- The above 3 meta tags *must* come first in the head -->
 
-    <title>5th International conference on waste, energy and environment (ICWEE-2026) | Sathyabama Institute Of Science And Technology</title>
+    <title>5th International conference on waste, energy and environment (ICWEE-2026) | Sathyabama Institute Of Science
+        And Technology</title>
     <meta name="description" content="5th International conference on waste, energy and environment (ICWEE-2026) " />
     <meta name="keywords" content="Conference, ICWEE-2026, Sathyabama, Waste, Energy, Environment" />
     <meta name="author" content="icweesist.com" />
@@ -99,42 +100,71 @@
         <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
 
 
-                <!--HEADER-->
+                                <!--HEADER-->
         <style>
             .lgx-header-top {
                 background: #fff;
-                padding: 20px 0;
-                border-bottom: 2px solid #e11c21;
-                text-align: center;
+                padding: 10px 0;
                 transition: all 0.3s ease;
+                border-bottom: 1px solid #eee;
+            }
+            .lgx-header-top .container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 20px;
+                max-width: 1200px;
+                width: 100%;
+            }
+            .lgx-logo-top img {
+                max-height: 80px;
+                width: auto;
             }
             .lgx-header-top h1 {
                 font-family: 'Oswald', sans-serif;
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: clamp(18px, 5vw, 36px);
+                font-size: clamp(20px, 2.5vw, 30px);
                 color: #222;
                 margin: 0;
                 line-height: 1.2;
-                letter-spacing: 0.5px;
+                letter-spacing: 0.1px;
+                text-align: left;
+                white-space: nowrap;
             }
-            .lgx-logo img {
-                border-radius: 8px;
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            }
-            .menu-onscroll .lgx-logo img {
-                max-height: 50px !important;
+            @media (max-width: 991px) {
+                .lgx-header-top .container {
+                    gap: 15px;
+                }
+                .lgx-logo-top img {
+                    max-height: 60px;
+                }
+                .lgx-header-top h1 {
+                    font-size: clamp(18px, 2.2vw, 24px);
+                }
             }
             @media (max-width: 767px) {
-                .lgx-header-top {
-                    padding: 10px 5px;
+                .lgx-header-top .container {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    padding: 0 10px;
+                    gap: 10px;
+                }
+                .lgx-header-top h1 {
+                    font-size: clamp(14px, 4vw, 18px);
+                    white-space: normal;
+                }
+                .lgx-logo-top img {
+                    max-height: 50px;
                 }
             }
         </style>
         <header>
             <div id="lgx-header-top" class="lgx-header-top">
                 <div class="container">
+                    <div class="lgx-logo-top">
+                        <img src="assets/img/icweesist-logo.jpeg" alt="Logo">
+                    </div>
                     <h1>5th International conference on waste, energy and environment (ICWEE-2026)</h1>
                 </div>
             </div>
@@ -151,14 +181,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <div class="lgx-logo">
-                                    <a href="index-2.html" class="lgx-scroll" style="display: flex; align-items: center; text-decoration: none;">
-                                        <img src="assets/img/icweesist-logo.jpeg" alt="ICWEE-2026"
-                                            style="max-height: 70px; width: auto;" />
-                                        <!-- <img src="assets/img/India.gif" width="100" alt="ICWEE-2026" style="padding-top:10px"/>
-                                <img src="assets/img/Slovakia.gif" width="100"  alt="ICWEE-2026" style="padding-top:10px"/> -->
-                                    </a>
-                                </div>
+
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
                                 <!--<div class="lgx-nav-right navbar-right">
@@ -272,15 +295,7 @@
         <section>
             <div id="lgx-about" class="lgx-about">
                 <div class="lgx-inner">
-                    <div class="container" style="margin-top: 40px; margin-bottom: 20px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="lgx-heading text-center" style="margin-bottom: 0;">
-                                    <h2 class="title" style="color: #333; font-size: 24px; margin: 0;">5TH INTERNATIONAL CONFERENCE ON WASTE, ENERGY AND ENVIRONMENT (ICWEE-2026)</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="container">
                         <div class="row">
                             <!--<div class="col-sm-12 col-md-5">
@@ -328,7 +343,7 @@
                                                 During Payment via Wire Transfer (Netbanking) kindly mention ICWEE after
                                                 your name (Ex: XXYYZZ ICWEE)
                                         </ul>
-                                        
+
 
                                     </div>
                                 </div>

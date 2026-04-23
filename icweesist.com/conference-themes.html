@@ -101,46 +101,71 @@
         <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
 
 
-        <!--HEADER-->
+                                <!--HEADER-->
         <style>
             .lgx-header-top {
                 background: #fff;
-                padding: 20px 0;
-                border-bottom: 2px solid #e11c21;
-                text-align: center;
+                padding: 10px 0;
                 transition: all 0.3s ease;
+                border-bottom: 1px solid #eee;
             }
-
+            .lgx-header-top .container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 20px;
+                max-width: 1200px;
+                width: 100%;
+            }
+            .lgx-logo-top img {
+                max-height: 80px;
+                width: auto;
+            }
             .lgx-header-top h1 {
                 font-family: 'Oswald', sans-serif;
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: clamp(18px, 5vw, 36px);
+                font-size: clamp(20px, 2.5vw, 30px);
                 color: #222;
                 margin: 0;
                 line-height: 1.2;
-                letter-spacing: 0.5px;
+                letter-spacing: 0.1px;
+                text-align: left;
+                white-space: nowrap;
             }
-
-            .lgx-logo img {
-                border-radius: 8px;
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            @media (max-width: 991px) {
+                .lgx-header-top .container {
+                    gap: 15px;
+                }
+                .lgx-logo-top img {
+                    max-height: 60px;
+                }
+                .lgx-header-top h1 {
+                    font-size: clamp(18px, 2.2vw, 24px);
+                }
             }
-
-            .menu-onscroll .lgx-logo img {
-                max-height: 50px !important;
-            }
-
             @media (max-width: 767px) {
-                .lgx-header-top {
-                    padding: 10px 5px;
+                .lgx-header-top .container {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    padding: 0 10px;
+                    gap: 10px;
+                }
+                .lgx-header-top h1 {
+                    font-size: clamp(14px, 4vw, 18px);
+                    white-space: normal;
+                }
+                .lgx-logo-top img {
+                    max-height: 50px;
                 }
             }
         </style>
         <header>
             <div id="lgx-header-top" class="lgx-header-top">
                 <div class="container">
+                    <div class="lgx-logo-top">
+                        <img src="assets/img/icweesist-logo.jpeg" alt="Logo">
+                    </div>
                     <h1>5th International conference on waste, energy and environment (ICWEE-2026)</h1>
                 </div>
             </div>
@@ -157,15 +182,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <div class="lgx-logo">
-                                    <a href="index-2.html" class="lgx-scroll"
-                                        style="display: flex; align-items: center; text-decoration: none;">
-                                        <img src="assets/img/icweesist-logo.jpeg" alt="ICWEE-2026"
-                                            style="max-height: 70px; width: auto;" />
-                                        <!-- <img src="assets/img/India.gif" width="100" alt="ICWEE-2026" style="padding-top:10px"/>
-                                <img src="assets/img/Slovakia.gif" width="100"  alt="ICWEE-2026" style="padding-top:10px"/> -->
-                                    </a>
-                                </div>
+
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
                                 <!--<div class="lgx-nav-right navbar-right">
@@ -274,7 +291,7 @@
         </section> <!--//.Banner Inner-->
 
         <!-- Conference Title -->
-        <div class="container"
+        <!--<div class="container"
             style="margin-top: 40px; margin-bottom: 20px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
             <div class="row">
                 <div class="col-sm-12">
@@ -284,7 +301,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!--ABOUT-->
         <section>
@@ -323,73 +340,87 @@
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Renewable energy - Biofuels</li>
+                                                                Renewable energy - Biofuels
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Applied Catalysis in Energy Engineering</li>
+                                                                Applied Catalysis in Energy Engineering
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Thermo-chemical Conversion of Biomass into Fuel</li>
+                                                                Thermo-chemical Conversion of Biomass into Fuel
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Energy Storage, Conservation and Conversion</li>
+                                                                Energy Storage, Conservation and Conversion
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Energy from Biomass, Water, Waste</li>
+                                                                Energy from Biomass, Water, Waste
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Alternative fuels Strategies for India</li>
+                                                                Alternative fuels Strategies for India
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Engine performance and Emission Studies</li>
+                                                                Engine performance and Emission Studies
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Sustainability and Clean Energy</li>
+                                                                Sustainability and Clean Energy
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Fuel Cell Technologies</li>
+                                                                Fuel Cell Technologies
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Energy Materials and Devices</li>
+                                                                Energy Materials and Devices
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Solar cells and Energy</li>
+                                                                Solar cells and Energy
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Nano-technology in Energy and Environment</li>
+                                                                Nano-technology in Energy and Environment
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Biomass and Bio-energy</li>
+                                                                Biomass and Bio-energy
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
                                                                 Process Modelling, Simulation and Chemical Reaction
-                                                                Engineering</li>
+                                                                Engineering
+                                                            </li>
                                                         </ul>
 
                                                     </div>
@@ -419,67 +450,80 @@
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Biomass and Feedstock Utilization</li>
+                                                                Biomass and Feedstock Utilization
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Biopolymer and Bio-plastics</li>
+                                                                Biopolymer and Bio-plastics
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Bioprocesses and Bioproducts from Waste</li>
+                                                                Bioprocesses and Bioproducts from Waste
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Waste Valorisation for Sustainable Development</li>
+                                                                Waste Valorisation for Sustainable Development
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Solid waste and Hazardous Waste Management</li>
+                                                                Solid waste and Hazardous Waste Management
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Resource recovery from E-Waste</li>
+                                                                Resource recovery from E-Waste
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Sustainable Processing of Plastic Waste & Biomass</li>
+                                                                Sustainable Processing of Plastic Waste & Biomass
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Waste Processing via AI and IoT</li>
+                                                                Waste Processing via AI and IoT
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Safety Engineering and Occupational Health</li>
+                                                                Safety Engineering and Occupational Health
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Labor Safety and Sanitation</li>
+                                                                Labor Safety and Sanitation
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Workplace Risk Management</li>
+                                                                Workplace Risk Management
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Public Health and Environment</li>
+                                                                Public Health and Environment
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Waste Minimization and Pollution Prevention</li>
+                                                                Waste Minimization and Pollution Prevention
+                                                            </li>
                                                         </ul>
 
                                                     </div>
@@ -503,67 +547,80 @@
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Water Management for Sustainable Cities</li>
+                                                                Water Management for Sustainable Cities
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Wastewater Discharge Processing</li>
+                                                                Wastewater Discharge Processing
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                GIS Application for Water Management</li>
+                                                                GIS Application for Water Management
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Removal of Organic & Emerging Pollutants</li>
+                                                                Removal of Organic & Emerging Pollutants
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Biochar based materials</li>
+                                                                Biochar based materials
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Water Purification</li>
+                                                                Water Purification
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Adsorption & Bio-Remediation</li>
+                                                                Adsorption & Bio-Remediation
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Nanomaterials in Water Treatment</li>
+                                                                Nanomaterials in Water Treatment
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Industrial Wastewater Treatment</li>
+                                                                Industrial Wastewater Treatment
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Water Pollution and Quality Control</li>
+                                                                Water Pollution and Quality Control
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Sludge Management</li>
+                                                                Sludge Management
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Marine & Freshwater Ecosystems</li>
+                                                                Marine & Freshwater Ecosystems
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Resource Recovery from Wastewater</li>
+                                                                Resource Recovery from Wastewater
+                                                            </li>
                                                         </ul>
 
                                                     </div>
@@ -587,67 +644,80 @@
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Climate Change and Global Warming</li>
+                                                                Climate Change and Global Warming
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Air, Soil, Water Pollution and Modelling</li>
+                                                                Air, Soil, Water Pollution and Modelling
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Air Quality Control</li>
+                                                                Air Quality Control
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Carbon Capture, Storage and Utilization</li>
+                                                                Carbon Capture, Storage and Utilization
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Resource Recovery During Pollution Control</li>
+                                                                Resource Recovery During Pollution Control
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                GIS for Air Pollution Modelling</li>
+                                                                GIS for Air Pollution Modelling
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Soil Health Assessment</li>
+                                                                Soil Health Assessment
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                GIS for Land Use</li>
+                                                                GIS for Land Use
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Environmental Risk Assessment</li>
+                                                                Environmental Risk Assessment
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Ecology and Mitigation Engineering</li>
+                                                                Ecology and Mitigation Engineering
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Environmental Fate Studies</li>
+                                                                Environmental Fate Studies
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Environmental System Modelling</li>
+                                                                Environmental System Modelling
+                                                            </li>
                                                             <li
                                                                 style="margin-bottom: 12px; font-size: 16px; padding-left: 25px; position: relative; color: #555;">
                                                                 <i class="fa fa-angle-double-right"
                                                                     style="position: absolute; left: 0; top: 5px; color: #efa506; font-size: 14px;"></i>
-                                                                Economic & Policy in Environmental Management</li>
+                                                                Economic & Policy in Environmental Management
+                                                            </li>
                                                         </ul>
 
                                                     </div>
