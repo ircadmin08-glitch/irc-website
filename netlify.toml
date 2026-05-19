@@ -1,0 +1,3 @@
+[build]
+  publish = "icweesist.com"
+  command = "" # No build command needed for a static site
