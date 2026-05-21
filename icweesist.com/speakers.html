@@ -109,6 +109,7 @@
                 transition: all 0.3s ease;
                 border-bottom: 1px solid #eee;
             }
+            
             .lgx-header-top .container {
                 display: flex;
                 align-items: center;
@@ -159,6 +160,46 @@
                     max-height: 50px;
                 }
             }
+            /* Ensure speaker cards are equal height so 3-per-row aligns, add spacing, and avoid upscaling images */
+            @media (min-width: 768px) {
+                #lgx-speakers .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: stretch;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+                #lgx-speakers .col-xs-12.col-sm-6.col-md-4,
+                #lgx-speakers .col-xs-12.col-sm-6.col-md-3 {
+                    display: flex;
+                    padding: 15px;
+                    box-sizing: border-box;
+                }
+                .lgx-single-speaker1 {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                .lgx-single-speaker1 figure {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1 1 auto;
+                    margin: 0;
+                }
+                .lgx-single-speaker1 img {
+                    display: block;
+                    margin: 12px auto;
+                    width: auto;
+                    height: auto;
+                    max-height: 240px;
+                    object-fit: contain;
+                }
+                .lgx-single-speaker1 figcaption {
+                    margin-top: auto;
+                }
+            }
+            
         </style>
         <header>
             <div id="lgx-header-top" class="lgx-header-top">
@@ -311,7 +352,7 @@
                         <div class="row">
 
 
-                            <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="lgx-single-speaker1 lgx-single-speaker3">
                                 <figure style="text-align:center">
                                     <a href="https://www.linkedin.com/in/pankti-pandey-523488b8/" target="_blank" rel="noopener">
@@ -326,7 +367,7 @@
                                 </figure>
                             </div>
                    </div>
-                   <div class="col-xs-12 col-sm-6 col-md-3">
+                   <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="lgx-single-speaker1 lgx-single-speaker3">
                                 <figure style="text-align:center">
                                     <a href="https://www.linkedin.com/in/saravanamuthu-vigneswaran-514345143/" target="_blank" rel="noopener">
@@ -342,23 +383,55 @@
                             </div>
                    </div>
                     
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="lgx-single-speaker1 lgx-single-speaker3">
                                 <figure style="text-align:center">
-                                    <a href="https://snu.edu.in/faculty/sanjeev-yadav/" target="_blank" rel="noopener">
-                                        <img src="assets/img/sanjeev.png" alt="Dr. Sanjeev Yadav">
+                                    <a href="https://scholar.its.ac.id/en/persons/siti-zullaikah/" target="_blank" rel="noopener">
+                                        <img src="assets/img/situ.png" alt="Dr. Siti Zullaikah">
                                     </a>
                                     <figcaption>
                                         <div class="speaker-info">
-                                             <h4 class="title">Dr. Sanjeev Yadav</h4>
-                                        <h5 class="subtitle" style="text-transform:none; color:#020022">Professor and HoD, ShivNadar University, Noida</h5>
+                                             <h4 class="title">Dr. Siti Zullaikah</h4>
+                                        <h5 class="subtitle" style="text-transform:none; color:#020022">Institut Teknologi Sepuluh Nopember, Indonesia</h5>
+                                     </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                   </div>
+
+                   <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="lgx-single-speaker1 lgx-single-speaker3">
+                                <figure style="text-align:center">
+                                    <a href="https://jaipur.manipal.edu/fosta/associate-dean-ashima.php" target="_blank" rel="noopener">
+                                        <img src="assets/img/ashima.png" alt="Dr. Ashima Bagaria">
+                                    </a>
+                                    <figcaption>
+                                        <div class="speaker-info">
+                                             <h4 class="title">Dr. Ashima Bagaria</h4>
+                                        <h5 class="subtitle" style="text-transform:none; color:#020022">Professor &amp; Associate Dean, Manipal University, Jaipur</h5>
+                                     </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                   </div>
+
+                   <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="lgx-single-speaker1 lgx-single-speaker3">
+                                <figure style="text-align:center">
+                                    <a href="https://www.rgipt.ac.in/faculty/Faculty/FacultyProfile?Sid=w2fx%2Ffv6Dks%3D" target="_blank" rel="noopener">
+                                        <img src="assets/img/bala.png" alt="Dr. M.S. Balathanigaimani">
+                                    </a>
+                                    <figcaption>
+                                        <div class="speaker-info">
+                                             <h4 class="title">Dr. M.S. Balathanigaimani</h4>
+                                        <h5 class="subtitle" style="text-transform:none; color:#020022">Professor, Rajiv Gandhi Institute of Petroleum Technology</h5>
                                      </div>
                                     </figcaption>
                                 </figure>
                             </div>
                    </div>
                    
-                   <div class="col-xs-12 col-sm-6 col-md-3">
+                   <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="lgx-single-speaker1 lgx-single-speaker3">
                                 <figure style="text-align:center">
                                     <a href="https://mech.iitm.ac.in/profile.php?fname=ssahu" target="_blank" rel="noopener">
